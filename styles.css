@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+#dice {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+  grid-template-columns: 32px 32px 32px;
+  grid-template-rows: 32px 32px 32px;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.pip {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px solid red;
+}
+#_1 {
+  grid-area: one;
+}
+#_3 {
+  grid-area: three;
+}
+#_4 {
+  grid-area: four;
+}
+#_5 {
+  grid-area: five;
+  visibility: hidden;
+}
+#_6 {
+  grid-area: six;
+}
+#_7 {
+  grid-area: seven;
+}
+#_9 {
+  grid-area: nine;
+}
+#btn {
+  margin-top: 10px;
+}
