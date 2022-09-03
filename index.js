@@ -22,7 +22,6 @@ function handlePips(pip) {
 btn.addEventListener("click", () => {
   resetDice();
   const randNum = Math.ceil(Math.random() * 6);
-  console.log(randNum);
   switch (randNum) {
     case 1:
       const hideForOne = [pipOne, pipThree, pipFour, pipSix, pipSeven, pipNine];
